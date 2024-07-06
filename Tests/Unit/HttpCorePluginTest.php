@@ -56,7 +56,7 @@ class HttpCorePluginTest extends TestCase
         $this->assertEquals($parameter, $response->getContent());
     }
 
-    public function dataProvider()
+    public static function dataProvider(): array
     {
         return [
             ['success'],

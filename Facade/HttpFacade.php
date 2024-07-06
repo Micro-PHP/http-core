@@ -37,9 +37,6 @@ readonly class HttpFacade implements HttpFacadeInterface
     ) {
     }
 
-    /**
-     * {@inheritDoc}
-     */
     public function createRouteBuilder(): RouteBuilderInterface
     {
         return $this->routeBuilderFactory->create();

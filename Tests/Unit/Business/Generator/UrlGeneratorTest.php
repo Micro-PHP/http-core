@@ -57,7 +57,7 @@ class UrlGeneratorTest extends TestCase
         $this->assertEquals($exceptedRoute, $generated);
     }
 
-    public function dataProvider()
+    public static function dataProvider(): array
     {
         return [
             ['/test', [], [], '/test', null],

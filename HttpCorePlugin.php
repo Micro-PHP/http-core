@@ -57,9 +57,6 @@ class HttpCorePlugin implements DependencyProviderInterface, ConfigurableInterfa
 
     private Container $container;
 
-    /**
-     * {@inheritDoc}
-     */
     public function provideDependencies(Container $container): void
     {
         $this->container = $container;

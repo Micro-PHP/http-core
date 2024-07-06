@@ -25,9 +25,6 @@ readonly class UrlGeneratorFactory implements UrlGeneratorFactoryInterface
     ) {
     }
 
-    /**
-     * {@inheritDoc}
-     */
     public function create(): UrlGeneratorInterface
     {
         return new UrlGenerator($this->routeCollectionFactory->create());

@@ -11,7 +11,7 @@
 
 namespace Micro\Plugin\HttpCore\Tests\Unit\Business\Response;
 
-use Micro\Component\DependencyInjection\Autowire\AutowireHelperFactoryInterface;
+use Micro\Framework\Autowire\AutowireHelperFactoryInterface;
 use Micro\Plugin\HttpCore\Business\Response\Callback\ResponseCallbackFactory;
 use Micro\Plugin\HttpCore\Business\Response\Callback\ResponseCallbackInterface;
 use Micro\Plugin\HttpCore\Business\Route\RouteInterface;

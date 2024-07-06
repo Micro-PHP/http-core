@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Micro\Plugin\HttpCore\Business\Response\Callback;
 
-use Micro\Component\DependencyInjection\Autowire\AutowireHelperInterface;
+use Micro\Framework\Autowire\AutowireHelperInterface;
 use Micro\Plugin\HttpCore\Business\Route\RouteInterface;
 use Micro\Plugin\HttpCore\Exception\RouteInvalidConfigurationException;
 

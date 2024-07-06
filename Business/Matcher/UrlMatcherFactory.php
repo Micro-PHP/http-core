@@ -27,9 +27,6 @@ readonly class UrlMatcherFactory implements UrlMatcherFactoryInterface
     ) {
     }
 
-    /**
-     * {@inheritDoc}
-     */
     public function create(): UrlMatcherInterface
     {
         return new UrlMatcher(

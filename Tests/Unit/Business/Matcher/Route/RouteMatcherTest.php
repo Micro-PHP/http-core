@@ -21,10 +21,8 @@ class RouteMatcherTest extends TestCase
 {
     /**
      * @dataProvider dataProvider
-     *
-     * @return void
      */
-    public function testMatch(array $matchersResults, bool $exceptedResult)
+    public function testMatch(array $matchersResults, bool $exceptedResult): void
     {
         $route = $this->createMock(RouteInterface::class);
         $request = $this->createMock(Request::class);
@@ -50,7 +48,7 @@ class RouteMatcherTest extends TestCase
         $this->assertEquals($exceptedResult, $result);
     }
 
-    public function dataProvider()
+    public static function dataProvider(): array
     {
         return [
             [

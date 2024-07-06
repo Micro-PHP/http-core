@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Micro\Plugin\HttpCore\Business\Response\Callback;
 
-use Micro\Component\DependencyInjection\Autowire\AutowireHelperFactoryInterface;
+use Micro\Framework\Autowire\AutowireHelperFactoryInterface;
 use Micro\Plugin\HttpCore\Business\Route\RouteInterface;
 
 /**

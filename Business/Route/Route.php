@@ -21,9 +21,6 @@ readonly class Route implements RouteInterface
     /**
      * @param array<class-string, string|null>|class-string|\Closure|object $controller
      * @param array<string> $methods
-     * @param array|null $parameters
-     *
-     * @phpstan-ignore-next-line
      */
     public function __construct(
         private string $uri,

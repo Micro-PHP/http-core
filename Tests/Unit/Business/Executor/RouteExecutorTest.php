@@ -57,7 +57,7 @@ class RouteExecutorTest extends TestCase
         $this->assertInstanceOf(Response::class, $response);
     }
 
-    public function dataProvider()
+    public static function dataProvider(): array
     {
         return [
             [true, null],

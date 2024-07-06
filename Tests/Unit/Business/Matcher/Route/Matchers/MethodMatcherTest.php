@@ -20,10 +20,8 @@ class MethodMatcherTest extends TestCase
 {
     /**
      * @dataProvider dataProvider
-     *
-     * @return void
      */
-    public function testMatch($routeMethod, $requestMethod)
+    public function testMatch($routeMethod, $requestMethod): void
     {
         $matcher = new MethodMatcher();
 
@@ -52,7 +50,7 @@ class MethodMatcherTest extends TestCase
         );
     }
 
-    public function dataProvider()
+    public static function dataProvider(): array
     {
         return [
             ['GET', 'GET'],

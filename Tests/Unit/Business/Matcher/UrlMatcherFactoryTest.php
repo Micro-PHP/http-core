@@ -19,7 +19,7 @@ use PHPUnit\Framework\TestCase;
 
 class UrlMatcherFactoryTest extends TestCase
 {
-    public function testCreate()
+    public function testCreate(): void
     {
         $factory = new UrlMatcherFactory(
             $this->createMock(RouteCollectionFactoryInterface::class),

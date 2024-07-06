@@ -24,9 +24,6 @@ class HttpCorePluginConfiguration extends PluginConfiguration implements HttpCor
     public const CFG_LOCATOR_TYPE_DEFAULT = 'code';
     public const CFG_LOCATOR_TYPE = 'MICRO_HTTP_ROUTE_LOCATOR';
 
-    /**
-     * {@inheritDoc}
-     */
     public function getRouteLocatorType(): string
     {
         return $this->configuration->get(self::CFG_LOCATOR_TYPE, self::CFG_LOCATOR_TYPE_DEFAULT, false);

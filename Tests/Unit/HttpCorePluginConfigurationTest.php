@@ -36,7 +36,7 @@ class HttpCorePluginConfigurationTest extends TestCase
         $this->assertEquals($configValue, $pluginConfiguration->getRouteLocatorType());
     }
 
-    public function dataProvider()
+    public static function dataProvider(): array
     {
         return [
             ['code'], ['test'],

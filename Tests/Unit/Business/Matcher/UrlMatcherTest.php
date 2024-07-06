@@ -67,7 +67,7 @@ class UrlMatcherTest extends TestCase
         $this->assertEquals($routeName, $route->getName());
     }
 
-    public function dataProvider()
+    public static function dataProvider(): array
     {
         return [
             ['test_dyn', 'GET', '/test/option_value/test_value.json', null],
@@ -77,21 +77,17 @@ class UrlMatcherTest extends TestCase
         ];
     }
 
-    protected function createUrlMatcher()
+    protected function createUrlMatcher(): UrlMatcher
     {
-        $urlMatcher = new UrlMatcher(
+        return new UrlMatcher(
             $this->createRouteMatcher(),
             $this->createRouteCollection(),
         );
-
-        return $urlMatcher;
     }
 
     protected function createRouteMatcher(): RouteMatcherInterface
     {
-        $matcher = (new RouteMatcherFactory())->create();
-
-        return $matcher;
+        return (new RouteMatcherFactory())->create();
     }
 
     protected function createRouteCollection(): RouteCollectionInterface

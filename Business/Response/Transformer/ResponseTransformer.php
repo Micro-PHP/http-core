@@ -29,9 +29,6 @@ readonly class ResponseTransformer implements ResponseTransformerInterface
     ) {
     }
 
-    /**
-     * {@inheritDoc}
-     */
     public function transform(Request $request, Response $response, mixed &$responseData): bool
     {
         $transformed = false;

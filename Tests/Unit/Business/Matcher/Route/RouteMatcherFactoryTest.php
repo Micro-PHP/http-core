@@ -17,7 +17,7 @@ use PHPUnit\Framework\TestCase;
 
 class RouteMatcherFactoryTest extends TestCase
 {
-    public function testCreate()
+    public function testCreate(): void
     {
         $factory = new RouteMatcherFactory();
 

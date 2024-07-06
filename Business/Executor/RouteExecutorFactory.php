@@ -31,9 +31,6 @@ readonly class RouteExecutorFactory implements RouteExecutorFactoryInterface
     ) {
     }
 
-    /**
-     * {@inheritDoc}
-     */
     public function create(): RouteExecutorInterface
     {
         return new RouteExecutor(

@@ -28,9 +28,6 @@ class RouteCollectionFactory implements RouteCollectionFactoryInterface
         $this->routeCollection = null;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     public function create(): RouteCollectionInterface
     {
         if ($this->routeCollection) {

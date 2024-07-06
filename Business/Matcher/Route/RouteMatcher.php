@@ -29,9 +29,6 @@ readonly class RouteMatcher implements RouteMatcherInterface
     ) {
     }
 
-    /**
-     * {@inheritDoc}
-     */
     public function match(RouteInterface $route, Request $request): bool
     {
         foreach ($this->matchers as $matcher) {

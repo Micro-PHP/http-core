@@ -80,7 +80,7 @@ class RouteLocatorFactoryTest extends TestCase
         return $stubKernel;
     }
 
-    protected function dataProvider()
+    public static function dataProvider(): array
     {
         return [
             ['code', null],

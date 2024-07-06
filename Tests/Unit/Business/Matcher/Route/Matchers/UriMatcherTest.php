@@ -20,10 +20,8 @@ class UriMatcherTest extends TestCase
 {
     /**
      * @dataProvider dataProvider
-     *
-     * @return void
      */
-    public function testMatch(string $requestUri, string $routeUri, string|null $routePattern, bool $excepted, array|null $parameters)
+    public function testMatch(string $requestUri, string $routeUri, string|null $routePattern, bool $excepted, array|null $parameters): void
     {
         $matcher = new UriMatcher();
 
@@ -58,7 +56,7 @@ class UriMatcherTest extends TestCase
         $this->assertEquals($excepted, $actual);
     }
 
-    public function dataProvider()
+    public static function dataProvider(): array
     {
         return [
             ['/test/api.json', '/{first}/{second}.{_format}', '/\/(.[aA-zZ0-9_-]+)\/(.[aA-zZ0-9_-]+)\.(.[aA-zZ0-9_-]+)/', true, ['first', 'second', 'format']],

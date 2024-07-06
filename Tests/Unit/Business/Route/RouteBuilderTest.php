@@ -71,7 +71,7 @@ class RouteBuilderTest extends TestCase
         $this->assertEquals($routeName, $route->getName());
     }
 
-    public function dataProvider()
+    public static function dataProvider(): array
     {
         return [
             ['test', function () {}, '/{test}.{_format}', '/\/(.[aA-zZ0-9-_]+)\.(.[aA-zZ0-9-_]+)$/', ['POST'], null],
